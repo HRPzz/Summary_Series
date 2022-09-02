@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox 성배레이아웃2</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <style>
+      :root {
+        --dark: #504975;
+        --white: #ffffff;
+        --background: #fbfbff;
+        --primary: #7661e2;
+        --light: #eceafe;
+      }
+
+      * {
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+          Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+          "Noto Sans KR", "Malgun Gothic", sans-serif;
+      }
+      body {
+        height: 100%;
+        padding: 10%;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 70%;
+        padding: 22px;
+        margin: 0 auto;
+        border: 1px solid var(--dark);
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 0px 4px 12px 0px #51459f14;
+      }
+      .item {
+        height: 40px;
+        /* padding: 0px ; 콘텐츠에 따라 조절해주세요 */
+        border: 1px solid var(--dark);
+        border-radius: 20px;
+        background-color: var(--primary);
+        color: var(--white);
+        box-shadow: 0px 4px 15px 0px #51459f14;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 2.5;
+        word-break: keep-all;
+      }
+      .content,
+      .sidebar {
+        background-color: var(--light);
+        color: var(--dark);
+      }
+      /* flex 속성 */
+      .wrap {
+        display: flex; /* row 방향 배치 */
+        gap: 0.5rem; /* flex 를 이루고 있는 요소들 사이에 간격 넣기 */
+        margin: 0.5rem 0; /* wrap 바깥 영역은 flex 요소가 아니므로 margin 으로 간격 넣기 */
+      }
+      /* 주 컨텐츠가 제일 먼저 와야 하므로 HTML 순서는 main-content 가 먼저이고 order 값을 통해서 디자인 순서만 변경하는 것 */
+      .content {
+        flex-grow: 1; /* 공간 차지 비율 */
+        order: 2; /* 순서 배치 */
+        padding: 30px 0; /*  */
+      }
+      .sidebar {
+        flex-grow: 1; /* 공간 차지 비율 */
+        order: 1; /* 순서 배치 */
+        padding: 55px 0; /*  */
+      }
+      .footer {
+        width: 66%; /* 콘텐츠가 2/3 영역을 차지하므로 66% => 오른쪽 남는 영역은 margin 이 됨 */
+        margin-left: auto; /* margin 을 왼쪽으로 배치 */
+        margin-top: -50px; /* negative margin 설정 */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="item header">Header</header>
+      <main class="wrap">
+        <div class="item content">Content</div>
+        <div class="item content">Content</div>
+        <div class="item sidebar">Sidebar</div>
+      </main>
+      <footer class="item footer">Footer</footer>
+    </div>
+  </body>
+</html>

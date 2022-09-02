@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .container {
+            /* width: 400px; */
+            display: flex;
+            flex-wrap: nowrap; /* 부모 요소의 크기를 따라감 */
+            /* flex-wrap: wrap: flex-start; */ /* 부모 요소 안에 자식 요소가 들어갈 수 있도록 다음 줄에 이어서 정렬 */
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+
+</body>
+</html>
