@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- 이 문서가 어떤 문서인가 -->
+<html>
+<head> <!-- html 문서 정보 -->
+	<title>Page Title</title>
+</head>
+<body> <!-- 표현하고 싶은 컨텐츠 -->
+	
+	<!-- heading: 문서 정보 나타냄, 6개 -->
+	<!-- h$*6{hello world} -->
+	<h1>hello world</h1>
+	<h2>hello world</h2>
+	<h3>hello world</h3>
+	<h4>hello world</h4>
+	<h5>hello world</h5>
+	<h6>hello world</h6>
+
+	<!-- p: 문단 -->
+	<!-- p{hello world} -->
+	<p>hello world</p>
+
+	<!-- sub: 아래첨자, sup: 윗첨자 -->
+	<p>H<sub>2</sub>0</p>
+	<p>2<sup>3</sup>=8</p>
+
+	<!-- lorem: 의미없는 문구, br: 개행 -->
+	<!-- hr: 구분선, a: url -->
+	<!-- strong(굵음), en(기울임): screen reader 가 음성을 강조해서 읽음 -->
+	<!-- b(굵음), i(기울임): screen reader 가 음성을 강조해서 읽지 않음 -->
+	<!-- mark: 형광펜(색깔은 css 로 조정) -->
+	<p>
+		Lorem
+		
+		
+		ipsum <br>
+		<br>
+		<br>
+		dolor sit amet
+		<hr>
+		<a href="http://www.paullab.co.kr">click</a> <!-- 사이트 열기 -->
+		<a href="http://www.paullab.co.kr" target="_blank">click</a> <!-- target="_blank": 새 탭으로 열기 -->
+		<a href="./index.html">click</a>
+		<a href="#move">click</a> <!-- href="#move": id 값이 move 인 태그로 이동, 없다면 이동X -->
+		<a href="./src/sunrise.jpg" download>click</a>  <!-- download: 해당 파일이 있다면 다운로드 받기 -->
+		<hr>
+		<strong>consectetur</strong>
+		adipisicing <b>elit</b>. Provident, <em>voluptatibus</em> mollitia. <i>Natus</i> explicabo <mark>adipisci</mark> labore, id quod accusamus molestiae hic, itaque eveniet odio, alias illum recusandae possimus. Unde, tempore tempora.
+	</p>
+	<p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel veniam debitis obcaecati, quis tenetur quae exercitationem? Impedit consequatur sit accusantium sequi delectus nesciunt eius recusandae dignissimos. Minima, quo quam.</p>
+	<p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel veniam debitis obcaecati, quis tenetur quae exercitationem? Impedit consequatur sit accusantium sequi delectus nesciunt eius recusandae dignissimos. Minima, quo quam.</p>
+	<p id="move">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel veniam debitis obcaecati, quis tenetur quae exercitationem? Impedit consequatur sit accusantium sequi delectus nesciunt eius recusandae dignissimos. Minima, quo quam.</p>
+
+	<!-- 
+		abbr : 준말 표현(NASA)
+		kbd : 키보드
+		pre : 있는 그대로
+		code : 코드 블록
+		cite : 인용(q는 인용구, cite는 인용블록)
+	 -->
+	 <!-- 프론트엔드 개발자가 되고 싶다면 참고할 사이트 추천 -->
+	 <!-- 참고문서 1: https://developer.mozilla.org/ko/docs/Web/HTML/Element -->
+	 <!-- 참고문서 2: html.spec.whatwg.org, multipage -->
+</body>
+</html>

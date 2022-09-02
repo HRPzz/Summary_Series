@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!-- 이 문서가 어떤 문서인가 -->
+<html>
+<head> <!-- html 문서 정보 -->
+	<title>Page Title</title>
+</head>
+<body> <!-- 표현하고 싶은 컨텐츠 -->
+	<!-- EMMET 문법 -->
+	<!-- 참고자료 : https://docs.emmet.io/cheat-sheet/ -->
+	<!-- h1 태그: h1 탭 --><hr>
+	<h1>***** EMMET *****</h1>
+	
+	<!-- h1 과 p 태그 동시: h1+p --><hr>
+	<h1></h1>
+	<p></p>
+
+	<!-- h1 태그 3개: h1*3 --><hr>
+	<h1></h1>
+	<h1></h1>
+	<h1></h1>
+
+	<!-- h1~h6 태그 모두: h$*6 --><hr>
+	<h1></h1>
+	<h2></h2>
+	<h3></h3>
+	<h4></h4>
+	<h5></h5>
+	<h6></h6>
+
+	<!-- 입력값이 있는 h1 태그 10개: h1{hello world}*10 --><hr>
+	<h1>hello world</h1>
+	<h1>hello world</h1>
+	<h1>hello world</h1>
+	<h1>hello world</h1>
+	<h1>hello world</h1>
+	<h1>hello world</h1>
+	<h1>hello world</h1>
+	<h1>hello world</h1>
+	<h1>hello world</h1>
+	<h1>hello world</h1>
+
+	<!-- id 값이 있는 h1 태그: h1#hojun --><hr>
+	<h1 id="hojun"></h1>
+
+	<!-- class 값이 있는 h1 태그: h1.hoju --><hr>
+	<h1 class="hoju"></h1>
+
+	<!-- div 자식 table 자식 tr 자식 td, footer 자식 p 태그 동시: (div>table>(tr>(td*2))*3)+(footer>p) --><hr>
+	<div>
+		<table>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	<footer>
+		<p></p>
+	</footer>
+
+	<!-- id 값, class 값 있는 div 태그: div#one.c1.c2.c3 --><hr>
+	<div id="one" class="c1 c2 c3"></div>
+
+	<!-- ul 자식 li 태그: ul>li.item$*5 --><hr>
+	<ul>
+		<li class="item1"></li>
+		<li class="item2"></li>
+		<li class="item3"></li>
+		<li class="item4"></li>
+		<li class="item5"></li>
+	</ul>
+
+	<!-- 입력값이 있는 a 태그: a{Click} --><hr>
+	<a href="">Click</a>
+
+	<!-- 문장 1개: lorem --><hr>
+	Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt itaque laborum corrupti impedit perferendis soluta voluptate consectetur deleniti, dolor illo quasi exercitationem vitae architecto, ipsum voluptas, repudiandae rerum nostrum nobis.
+
+	<!-- img 태그: img:z --><hr>
+	<img src="" alt="" sizes="" srcset="">
+
+	<!-- 문장 5개: lorem*5 --><hr>
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem voluptatum exercitationem doloribus. Doloremque magnam nemo dolores facilis molestiae officia maxime cum voluptatibus corporis, earum mollitia ad explicabo, vero distinctio!
+	Aperiam ea sunt dolorem animi natus nisi laboriosam impedit rem porro totam voluptate exercitationem voluptas fugit rerum, error, corporis facere iste aspernatur at non magnam. Distinctio, at. Perspiciatis, nisi quod.
+	Non nobis quae placeat laudantium maxime at saepe autem mollitia qui sunt adipisci eligendi obcaecati, ea suscipit, voluptatum accusamus veritatis beatae, eius culpa ullam quam molestias laborum! Quos, ipsam fugiat.
+	Atque asperiores facere quia sint ipsam eveniet veniam corrupti nesciunt enim soluta, suscipit laboriosam placeat. Ipsum, reiciendis, vitae reprehenderit itaque quidem in fuga tempore molestias assumenda laudantium debitis error. Omnis.
+	Eos reprehenderit aperiam quia iste necessitatibus aut, blanditiis sapiente natus eaque molestias adipisci, nemo, libero placeat alias exercitationem minus similique assumenda illum? Ex dicta corrupti minima, nesciunt animi quia sint!
+
+	<!-- 단어 5개: lorem5 --><hr>
+	Lorem ipsum dolor sit amet.
+	
+	<!-- [a='value1' b="value2" c=1] --><hr>
+	<div a="value1" b="value2" c="1"></div>
+
+	<!-- href 값이 있는 a 태그: a[href='www.naver.com'] --><hr>
+	<a href="www.naver.com"></a>
+
+	<!-- type 값이 있는 input 태그: input:date -->
+	<input type="date" name="" id="">
+
+</body>
+</html>

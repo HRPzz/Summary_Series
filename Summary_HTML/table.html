@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+
+	<!-- CSS -->
+	<!-- table 에 테두리 적용 -->
+	<style>
+		table, tr, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- table: table>(tr>td{hello world}*3)*3 -->
+	<!-- th: 테이블 헤더(제목), 자동 중앙 정렬 -->
+	<table>
+		<tr>
+			<th>hello world</th>
+			<th>hello world</th>
+			<th>hello world</th>
+		</tr>
+		<tr>
+			<td>hello world</td>
+			<td>hello world</td>
+			<td>hello world</td>
+		</tr>
+		<tr>
+			<td>hello world</td>
+			<td>hello world</td>
+			<td>hello world</td>
+		</tr>
+	</table>
+
+	<!-- 
+		1. thead, tbody, tfoot, caption 이나 colgroup 은 하지 않습니다.
+		2. 구도를 잡는 용도로 사용하지 않습니다.
+	-->
+	<!-- thead: div 처럼 묶어주는 역할 -->
+	<!-- tbody: 내용 -->
+	<!-- tfoot: 집계 -->
+	<!-- td colspan="2": 컬럼 단위로 합침 -->
+	<table>
+		<thead>
+			<tr>
+				<td>구분</td>
+				<td>이름</td>
+				<td>판매량</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>해리포터</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>헝거게임</td>
+				<td>200</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>반지의제왕</td>
+				<td>300</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="2">총 판매량</td>
+				<td>600</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
