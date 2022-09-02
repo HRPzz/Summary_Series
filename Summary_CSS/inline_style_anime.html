@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Title</title>
+
+    <style>
+
+        /*
+            애니메이션
+            - 50% 일 때 변형 - x축 200픽셀, y축 0픽셀 이동
+        */
+        @keyframes 애니 {
+            50% {
+                transform: translate(200px, 0)
+            }
+
+            100% {
+                transform: translate(200px, 200px)
+            }
+        }
+
+        /*
+            크롬 개발자 도구에서 animation-timing-function 을 보면 애니메이션이 어떻게 작동하는지 볼 수 있음, 조절해서 복사할 수도 있음
+        */ 
+        div {
+            background: red;
+            width:100px;
+            height:100px;
+            animation:애니 2s; /*애니메이션 2초 실행*/
+            transition: all 1s; /*1초만큼 텀 준 다음 애니메이션 적용*/
+        }
+
+        /*
+            마우스 갖다 대면 변하게 만듦
+        */
+        div:hover {
+            background: dodgerblue;
+            width:200px;
+            height:200px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div>hello world</div>
+
+</body>
+</html>

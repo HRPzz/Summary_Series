@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Title</title>
+
+    <style>
+
+        /*
+            버튼 효과 넣기 => 마우스 올리면 태양이 뜨는 것 같은 효과 적용
+        */
+        .btn {
+            border:4px solid palevioletred;
+            border-radius: 4px; /*모서리 깎음*/
+            padding: 30px 60px; /*안쪽여백 상하 좌우 적용*/
+            background: none;
+            color: palevioletred; /*글자색*/
+            font-size:32px; /*글자 크기*/
+            position:relative; /*position: absolute; 요소의 기준점(애니메이션 시작 부분)이 됨, 없으면 최상단이 설정됨 */
+            overflow:hidden; /*흘러넘친 글자 잘라내기*/
+            cursor:pointer; /*마우스를 버튼위에 올려놨을때 마우스 포인터 모양이 손가락으로 바뀜*/
+            transition:all 0.3s;
+
+        }
+
+        .btn:hover {
+            color:white;
+            border: 4px solid firebrick;
+        }
+
+        .btn:before { /*앞에 content가 붙음 =>*/
+            content: "";
+            position: absolute; /*osition: absolute; 요소의 기준점: relative */
+            bottom: 0;
+            left: 0;
+            width: 100%; /*전체 차지*/
+            height: 100%; /*전체 차지*/
+            background: palevioletred;
+            z-index: -1; /*요소가 1개라서 -1이면 됨, 맨 위/아래로 보내기*/
+            border-radius: 100px 100px 0px 0px; /*원주율 설정 => 상단 좌우만 적용됨*/
+            height: 0px; /*높이 없음 => hover 시 생기게 하기 위함*/
+            transition: all 0.3s;
+        }
+
+        .btn:hover:before {
+            height: 120px; /*0px부터 120px 될때까지 올라오게 됨*/
+            background: firebrick;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <button class="btn">Click Me!</button>
+
+</body>
+</html>

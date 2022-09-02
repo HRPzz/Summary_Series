@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Title</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols" rel="stylesheet">
+
+    <style>
+
+        /*
+            
+        */
+        h1 {
+            border: 1px solid black; /*실선 solid, 점선 dotted*/
+            padding: 10px 20px 30px 40px; /*안쪽여백(2개: 상하/좌우, 3개: 상/좌우/하, 4개: 시계방향(상우하좌) 적용)*/
+            margin: 100px; /*바깥(상하좌우 모두 적용) 여백*/
+        }
+
+        /*
+            너비=width+left_padding+right_padding+left_border+right_border=200+20+20+1+1=242
+        */
+        h1 {
+            width: 200px;
+            border: 1px solid black; /*실선*/
+            padding: 20px;
+        }
+
+        /*
+            box-sizing: border-box 많이 쓰이니 기억할 것
+        */
+        h1 {
+            width: 300px;
+            border: 1px solid black; /*실선*/
+            padding: 20px;
+            box-sizing: border-box; /*너비 300px 고정*/
+        }
+
+        /*
+            폰트 적용
+            - Google Fonts 에서 안녕! 검색해서 한글 지원하는 폰트 찾기
+            - Select all styles - Selected family - CSS rules to specify families 에서 HTML, CSS 코드 복분
+            - head 에 HTML 복붙
+            - CSS에 복붙 - font-family: 'Dancing Script', cursive;
+        */
+        h1 {
+            width: 300px;
+            border: 1px solid black; /*실선*/
+            padding: 20px;
+            box-sizing: border-box; /*너비 300px 고정*/
+            font-family: 'Dancing Script', cursive;
+        }
+
+        /*
+            아이콘 적용
+            - 세계에서 많이 쓰는 아이콘 사이트: font awesome
+            - 필터에 free 체크
+            - 사용하려면 인증이 필요하므로 Google Fonts 사이트에 있는 Icons 사용할 예정
+            - Github Repo 에 가서 Getting started 에 있는 HTML link 코드 복붙
+            - 사용하고 싶은 아이콘 클릭 - Static icon font 에서 Inserting the icon 코드 복붙하고 클래스명 material-icons 으로 변경하면 제대로 아이콘이 뜸
+        */
+        h1 {
+            width: 300px;
+            border: 1px solid black; /*실선*/
+            padding: 20px;
+            box-sizing: border-box; /*너비 300px 고정*/
+            font-family: 'Dancing Script', cursive;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- h1 폰트 사이즈 32, 굵기 900 -->
+    <h1>hello world</h1>
+
+    <span class="material-icons">
+        search
+    </span>
+
+</body>
+</html>
